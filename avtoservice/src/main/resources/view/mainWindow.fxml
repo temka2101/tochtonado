@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="559.0" prefWidth="959.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="a.vkube.control.MainWindowController">
+   <padding>
+      <Insets bottom="100.0" left="20.0" right="20.0" top="1.0" />
+   </padding>
+   <top>
+      <TableView fx:id="clientTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="926.0" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="idClient" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="firstName" prefWidth="104.0" text="FirstName" />
+            <TableColumn fx:id="lastName" prefWidth="89.0" text="LastName" />
+            <TableColumn fx:id="patronymic" prefWidth="98.0" text="Patronymic" />
+            <TableColumn fx:id="birthday" prefWidth="79.0" text="Birthday" />
+            <TableColumn fx:id="regDate" prefWidth="107.0" text="RegistrationDate" />
+            <TableColumn fx:id="email" minWidth="9.0" prefWidth="84.0" text="Email" />
+            <TableColumn fx:id="phone" prefWidth="72.0" text="Phone" />
+            <TableColumn fx:id="genderCode" prefWidth="77.0" text="GenderCode" />
+            <TableColumn fx:id="photoPath" prefWidth="111.0" text="PhotoPath" />
+         </columns>
+      </TableView>
+   </top>
+   <bottom>
+      <Button fx:id="closeButton" mnemonicParsing="false" prefHeight="22.0" prefWidth="101.0" text="Close" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <left>
+      <Button fx:id="buttonCreate" mnemonicParsing="false" onAction="#onActionCreate" text="Create" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="15.0" />
+         </BorderPane.margin>
+      </Button>
+   </left>
+   <center>
+      <Button fx:id="buttonUpdate" mnemonicParsing="false" onAction="#onActionUpdate" text="Edit" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="650.0" top="15.0" />
+         </BorderPane.margin>
+      </Button>
+   </center>
+   <right>
+      <Button fx:id="buttonDelete" mnemonicParsing="false" onAction="#onActionDelete" text="Delete" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="15.0" />
+         </BorderPane.margin>
+      </Button>
+   </right>
+</BorderPane>
